@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --cor-primaria: #000000;
+  --cor-secundaria: #F6F6F6;
+  --cor-terciaria: #22D4FD;
+  --cor-hover: #272727;
+
+  --fonte-primaria: 'Krona One', sans-serif;
+  --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+header {
+  padding: 2% 0% 0% 15%;
+}
+
+nav {
+  display: flex;
+  gap: 80px;
+}
+
+.menu {
+  font-family: var(--fonte-secundaria);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--cor-terciaria);
+  text-decoration: none;
+}
+
+body {
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: var(--cor-primaria);
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10%;
+  gap: 82px;
+}
+
+section {
+  width: 50%;
+
+}
+
+h1 {
+  color: var(--cor-secundaria);
+  font-size: 2.25rem;
+  font-weight: 400;
+  font-family: var(--fonte-primaria);
+  margin-bottom: 40px;
+}
+
+span {
+  color: var(--cor-terciaria);
+}
+
+p {
+  color: var(--cor-secundaria);
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: var(--fonte-secundaria);
+  opacity: 0.6;
+  margin-bottom: 40px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 50px;
+  align-items: center;
+
+}
+
+h2 {
+  font-family: var(--fonte-primaria);
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: var(--cor-secundaria);
+}
+
+.botoes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  font-family: var(--fonte-secundaria);
+  color: var(--cor-secundaria);
+  left: 362px;
+  width: 50%;
+  border-radius: 8px;
+  border: 2px solid var(--cor-terciaria);
+  text-align: center;
+  text-decoration: none;
+  padding: 21px 53px;
+  font-weight: bold;
+}
+
+.botoes:hover {
+  background-color: var(--cor-hover);
+
+}
+
+.apresentacao__imagem {
+  width: 50%;
+  /* gap: 82px; */
+}
+
+.rodape>p {
+  color: var(--cor-primaria);
+  background-color: var(--cor-terciaria);
+  font-family: var(--fonte-secundaria);
+  font-size: 1.5rem;
+  padding: 24px;
+  text-align: center;
+  font-weight: 400;
+
+}
+
+@media (max-width: 1200px) {
+  header {
+    padding: 10%;
+  }
+
+  nav {
+    justify-content: center;
+  }
+  
+  .apresentacao {
+    margin: 0;
+    flex-direction: column-reverse;
+    padding: 5%;
+  }
+
+  section {
+    width: auto;
+  }
+
+  .apresentacao__imagem {
+    width: 100%;
+  }
+
+  br {
+    display: none;
+  }
+}
